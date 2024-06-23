@@ -1,11 +1,16 @@
 package dev.prokop.ibkr.rest;
 
 import dev.prokop.ibkr.State;
+import dev.prokop.ibkr.model.Account;
 import dev.prokop.ibkr.model.AuthStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
 
 @Service
 public class IbkrRestClientImpl implements IbkrRestClient {
@@ -32,6 +37,15 @@ public class IbkrRestClientImpl implements IbkrRestClient {
         String url = baseUrl() + "/tickle";
         ResponseEntity<String> forEntity = restTemplate.postForEntity(url, "{}", String.class);
         return forEntity.getBody();
+    }
+
+    @Override
+    public List<Account> portfolioAccounts() {
+        String url = baseUrl() + "/portfolio/accounts";
+
+        ResponseEntity<Account[]> forEntity = restTemplate.getForEntity(url, Account[].class);
+
+        return Arrays.asList(Objects.requireNonNull(forEntity.getBody()));
     }
 
 }
