@@ -17,7 +17,7 @@ public class PortfolioPosition {
      * The contract ID of the position.
      */
     @JsonProperty("conid")
-    private String contractId;
+    private int contractId;
 
     /**
      * The average cost of each share in the position times the multiplier.
@@ -54,7 +54,7 @@ public class PortfolioPosition {
     /**
      * The asset class or security type of the contract.
      */
-    private String secType;
+    private SecType secType;
 
     /**
      * The total potential profit if you were to trade.
@@ -64,7 +64,7 @@ public class PortfolioPosition {
     /**
      * The asset class or security type of the contract.
      */
-    private String assetClass;
+    private SecType assetClass;
 
     /**
      * Returns the total size of the position.
@@ -84,11 +84,11 @@ public class PortfolioPosition {
      *
      * @return the contract ID of the position
      */
-    public String getContractId() {
+    public int getContractId() {
         return contractId;
     }
 
-    public void setContractId(String contractId) {
+    public void setContractId(int contractId) {
         this.contractId = contractId;
     }
 
@@ -170,11 +170,11 @@ public class PortfolioPosition {
         this.marketValue = marketValue;
     }
 
-    public String getSecType() {
+    public SecType getSecType() {
         return secType;
     }
 
-    public void setSecType(String secType) {
+    public void setSecType(SecType secType) {
         this.secType = secType;
     }
 
@@ -186,11 +186,11 @@ public class PortfolioPosition {
         this.unrealizedPnl = unrealizedPnl;
     }
 
-    public String getAssetClass() {
+    public SecType getAssetClass() {
         return assetClass;
     }
 
-    public void setAssetClass(String assetClass) {
+    public void setAssetClass(SecType assetClass) {
         this.assetClass = assetClass;
     }
 
