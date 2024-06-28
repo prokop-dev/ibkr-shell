@@ -12,4 +12,5 @@ public interface IbkrRestClient {
     String tickle();
     List<Account> portfolioAccounts();
     List<PortfolioPosition> portfolioPositions(String accountId);
+
 }
