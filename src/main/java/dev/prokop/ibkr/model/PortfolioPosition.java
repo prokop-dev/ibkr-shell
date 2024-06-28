@@ -3,6 +3,7 @@ package dev.prokop.ibkr.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
+ * Response for GET /portfolio2/{accountId}/positions call.
  * <a href="https://ibkrcampus.com/ibkr-api-page/cpapi-v1/#positions">Positions (NEW)</a>
  */
 public class PortfolioPosition {
