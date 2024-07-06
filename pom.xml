@@ -54,21 +54,6 @@
 			<artifactId>spring-shell-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-<!--		<dependency>-->
-<!--			<groupId>ibkr</groupId>-->
-<!--			<artifactId>cientportal</artifactId>-->
-<!--			<version>0</version>-->
-<!--			<scope>system</scope>-->
-<!--			<systemPath>${basedir}/../ibgroup.web.core.iblink.router.clientportal.gw.jar</systemPath>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>ibkr</groupId>-->
-<!--			<artifactId>auth</artifactId>-->
-<!--			<version>0</version>-->
-<!--			<scope>system</scope>-->
-<!--			<systemPath>${basedir}/../ibgroup.security.auth.client.lib-20210528111740.jar</systemPath>-->
-<!--		</dependency>-->
 	</dependencies>
 
 	<dependencyManagement>
