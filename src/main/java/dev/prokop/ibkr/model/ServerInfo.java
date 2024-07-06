@@ -1,6 +1,8 @@
 package dev.prokop.ibkr.model;
 
 /**
+ * This object is part of response from /tickle and /iserver/auth/status.
+ *
  * <pre>
  * "serverInfo":{
  *   "serverName":"XxxX77777",
@@ -9,7 +11,15 @@ package dev.prokop.ibkr.model;
  * </pre>
  */
 public class ServerInfo {
+
+    /**
+     * IBKR server information. Internal use only.
+     */
     private String serverName;
+
+    /**
+     * IBKR version information. Internal use only.
+     */
     private String serverVersion;
 
     public String getServerName() {
