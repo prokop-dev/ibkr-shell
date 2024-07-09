@@ -138,9 +138,9 @@ public final class HistoricalMarketDataSet {
             return "Data{" +
                     "timestamp=" + getInstant() +
                     ", open=" + open +
-                    ", close=" + close +
                     ", high=" + high +
                     ", low=" + low +
+                    ", close=" + close +
                     ", volume=" + volume +
                     '}';
         }
